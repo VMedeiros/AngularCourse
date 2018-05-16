@@ -1,10 +1,10 @@
-# Meat - Angular App Starter
+# Meat - Angular App Tutorial 
 
 ## 1. Passos para começar
 
 ### Clonando o Repositório
 
-`git clone https://github.com/cod3rcursos/meat-app-starter.git`
+`git clone https://github.com/VMedeiros/AngularCourse.git`
 
 ### Instalando as Dependências
 
