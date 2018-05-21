@@ -6,6 +6,7 @@ import { HomeComponent } from './home/home.component';
 import { Routes } from "@angular/router";
 import { ReviewsComponent } from './restaurant-detail/reviews/reviews.component';
 import { MenuComponent } from './restaurant-detail/menu/menu.component';
+import { OrderComponent } from './order/order.component';
 
 export const ROUTES: Routes = [
     //Navegação 'nome da rota', Componente
@@ -20,5 +21,6 @@ export const ROUTES: Routes = [
             { path: 'reviews', component: ReviewsComponent }
         ]
     },
+    { path: 'order', component: OrderComponent },
     { path: 'about', component: AboutComponent }
 ]
