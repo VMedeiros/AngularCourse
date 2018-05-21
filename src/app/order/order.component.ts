@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OrderComponent implements OnInit {
 
-  paymentOption: RadioOption[]=[
+  paymentOptions: RadioOption[]=[
     {label: "Dinheiro", value: 'MON'},
     {label: "Cartão de Débito", value: 'DEB'},
     {label: "Cartão Refeição", value: 'REF'},
