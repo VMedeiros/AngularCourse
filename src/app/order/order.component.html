@@ -66,7 +66,7 @@
 
                     <div class="form-group">
 
-                        <mt-radio [options]="paymentOptions" name="paymentOption" ngModel></mt-radio>
+                        <mt-radio [options]="paymentOptions" name="paymentOption" ngModel required></mt-radio>
 
                     </div>
 
@@ -85,7 +85,7 @@
 
         <div class="row">
             <div class="col-xs-12">
-                <button class="btn btn-success pull-right" [disabled]="!form.valid">
+                <button class="btn btn-success pull-right" [disabled]="!form.valid || cartItems().length === 0">
           <i class="fa fa-credit-card"></i> Concluir Pedido
         </button>
             </div>
