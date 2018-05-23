@@ -25,7 +25,7 @@ export class ShoppingCartService {
     decreaseQty(item: CartItem) {
         item.quantity = item.quantity - 1;
         if(item.quantity === 0){
-            this.removeItem;
+            this.removeItem(item);
         }
     }
 
