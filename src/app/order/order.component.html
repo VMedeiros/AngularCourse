@@ -9,6 +9,7 @@
         <!-- {{form.valid}} {{form.value | json}} -->
 
         <form #form="ngForm" novalidate>
+            <!--         <form [formGroup]="orderForm" novalidate> -->
             <div class="row">
                 <div class="col-xs-12">
                     <h2 class="page-header">
@@ -17,14 +18,48 @@
                 </div>
             </div>
 
-            <div class="row invoice-info">
+            <div class="row">
+                <div class="col-xs-12">
+                    <p class="lead">Seus Dados:</p>
+                </div>
+
+                <div class="col-sm-6 col-xs-12">
+
+                    <mt-input-container errorMessage="Campo obrigatório e com no mínimo 5 caracteres." label="Nome">
+                        <input type="text" class="form-control" name="name" ngModel required minlength="5" placeholder="Nome" autocomplete="off">
+                    </mt-input-container>
+
+                </div>
+
+                <div class="col-sm-3 col-xs-6">
+
+                    <mt-input-container errorMessage="Email obrigatório." label="E-mail">
+                        <input type="text" class="form-control" name="email" ngModel required minlength="5" placeholder="E-mail" autocomplete="off">
+                    </mt-input-container>
+
+                </div>
+
+
+                <div class="col-sm-3 col-xs-6">
+
+                    <mt-input-container errorMessage="Email obrigatório." label="E-mail">
+                        <input type="text" class="form-control" name="emailConfirmation" ngModel required minlength="5" placeholder="Confirmação do e-mail" autocomplete="off">
+                    </mt-input-container>
+
+                </div>
+
+            </div>
+
+            <!-- ---------------------------------------------xxxxxxxxxxxxxxxxxxxxxxxxxxx------------------------------------- -->
+
+            <div class="row">
                 <div class="col-xs-12">
                     <p class="lead">Endereço de Entrega:</p>
                 </div>
 
                 <div class="col-sm-6 col-xs-12">
 
-                    <mt-input-container errorMessage="Campo obrogatório e com no mínimo 5 caracteres." label="Edereço">
+                    <mt-input-container errorMessage="Campo obrigatório e com no mínimo 5 caracteres." label="Edereço">
                         <input name="address" class="form-control" ngModel required minlength="5" placeholder="Endereço" autocomplete="off">
                     </mt-input-container>
 
@@ -32,7 +67,7 @@
 
                 <div class="col-sm-3 col-xs-6">
 
-                    <mt-input-container errorMessage="Número obrogatório." label="Edereço">
+                    <mt-input-container errorMessage="Número obrigatório." label="Edereço">
                         <input name="number" class="form-control" ngModel required minlength="1" placeholder="Número" pattern="^[0-9]*$" autocomplete="off">
                     </mt-input-container>
 
